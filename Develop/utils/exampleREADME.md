@@ -1,10 +1,10 @@
-# Example
+# README.md-Example
   
 
 
   ## Description
 
-  This is an example
+  Example for the README.md-Generator
 
   ## Table of Contents
 
@@ -30,13 +30,13 @@
 
   ## Usage
 
-  onafbnoinfaiop
+  After downloading open the develop folder in the console and after installing dependencies   
 
   
 
   ## Contributors
 
-  fioafniofnio
+  me
 
   ## Tests
 
@@ -51,4 +51,4 @@
   For additional questions, contact me at the email provided below. 
 
   - GitHub: [LschadeL](https://github.com/LschadeL/)
-  - Email:  loganniles@gmail.com
+  - Email:  loganniles96@gmail.com
