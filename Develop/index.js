@@ -67,7 +67,10 @@ const questions = [{
 
 // TODO: Create a function to write README file
 function writeReadme(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    return fs.writeFile(path.join(process.cwd(), fileName), data, (err) => {
+        if (err)
+            return console.log(err);
+    });
 }
 
 // TODO: Create a function to initialize app
@@ -75,7 +78,7 @@ function init() {
     inquirer.prompt(questions)
 .then((inquirerAnswers) => {
     console.log("Your README has been created");
-    writeReadme("./utils/exampleREADME.md", generateMarkdown({ ...inquirerAnswers }));
+    writeReadme("./utils/exampleREADME.md", generateMarkdown({...inquirerAnswers}));
 })
 }
 

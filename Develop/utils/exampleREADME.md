@@ -4,7 +4,7 @@
 
   ## Description
 
-  This is a readme generator to create a proffesional readme quicly for future projects.
+  This is a readME.md file generator created using Node.JS and javascript to quickly create a professional readME.md for future projects.
 
   ## Table of Contents
 
@@ -30,13 +30,13 @@
 
   ## Usage
 
-  Use this to create professional readme.md pages to properly describe projects.
+  Run node index.js in the terminal after installing any dependencies. Then answer the questions which appear to generate your README file.
 
   
 
   ## Contributors
 
-  Me
+  Lillith S.
 
   ## Tests
 
