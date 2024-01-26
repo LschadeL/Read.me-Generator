@@ -1,10 +1,10 @@
-# README.md-Example
+# ReadME Generator
   
 
 
   ## Description
 
-  Example for the README.md-Generator
+  This is a readme generator to create a proffesional readme quicly for future projects.
 
   ## Table of Contents
 
@@ -22,7 +22,7 @@
   
   ## Installations
 
-  To install dependencies, run these commands:
+  To install dependencies run:
 
   ```
   npm i
@@ -30,25 +30,25 @@
 
   ## Usage
 
-  After downloading open the develop folder in the console and after installing dependencies   
+  Use this to create professional readme.md pages to properly describe projects.
 
   
 
   ## Contributors
 
-  me
+  Me
 
   ## Tests
 
   To run tests, run these commands:
 
   ```
-  npm test
+  none
   ```
 
   ## Questions
 
-  For additional questions, contact me at the email provided below. 
+  For additional questions please contact me at the email provided below. 
 
   - GitHub: [LschadeL](https://github.com/LschadeL/)
   - Email:  loganniles96@gmail.com

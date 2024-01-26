@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function licenseBadge(license) {
   if (license !== "None") {
     return `![Github License](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`
   }
@@ -9,7 +9,7 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function licenseLink(license) {
   if (license !== "None") {
     return (
       `* [License](#license-📛)`
@@ -20,14 +20,14 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+function licenseSection(license) {
   if (license !== "None") {
     return (
    `## License 📛 
 
-    Copyright @ ${license}. All rights reserved.
+    Copyrighted @ ${license}. All rights reserved.
 
-    Licensed under the ${license} license.`
+    Licensed with ${license}'s license.`
     )
   }
   return ""
@@ -36,7 +36,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+  ${licenseBadge(data.license)}
 
 
   ## Description
@@ -55,11 +55,11 @@ function generateMarkdown(data) {
 
   * [Questions](#questions)
 
-  ${renderLicenseLink(data.license)}
+  ${licenseLink(data.license)}
   
   ## Installations
 
-  To install dependencies, run these commands:
+  To install dependencies run:
 
   \`\`\`
   ${data.dependencies}
@@ -69,7 +69,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ${renderLicenseSection(data.license)}
+  ${licenseSection(data.license)}
 
   ## Contributors
 
@@ -85,7 +85,7 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  For additional questions, contact me at the email provided below. 
+  For additional questions please contact me at the email provided below. 
 
   - GitHub: [${data.github}](https://github.com/${data.github}/)
   - Email:  ${data.email}

@@ -11,25 +11,25 @@ const path = require("path");
 const questions = [{
     type: "input",
     name: "github",
-    message: "What's you GitHub username?"
+    message: "Please enter your GitHub username."
 },
 
 {
     type: "input",
     name: "email",
-    message: "What's your email?"
+    message: "Please enter your email."
 },
 
 {
     type: "input",
     name: "title",
-    message: "What's the title of this project?"
+    message: "Please enter the title of this project."
 },
 
 {
     type: "input",
     name: "description",
-    message: "Provide a brief description of this project:"
+    message: "Please provide a brief description of this project:"
 },
 
 {
@@ -66,7 +66,7 @@ const questions = [{
 }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeReadme(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
@@ -74,8 +74,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
 .then((inquirerAnswers) => {
-    console.log("Generating.... Please wait....");
-    writeToFile("./utils/exampleREADME.md", generateMarkdown({ ...inquirerAnswers }));
+    console.log("Your README has been created");
+    writeReadme("./utils/exampleREADME.md", generateMarkdown({ ...inquirerAnswers }));
 })
 }
 
